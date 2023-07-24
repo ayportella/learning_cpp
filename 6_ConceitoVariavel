@@ -1,10 +1,11 @@
 #include <iostream>
-#include <tchar.h>
+#include <iomanip>
+#include <Windows.h>
 
 int main()
 {
     //Função que configura o console windows para mostrar acentos
-    _tsetlocale(LC_ALL, _T("portuguese"));
+    SetConsoleOutputCP(65001);
 
     //declaracao de variaveis
     //primeiro colocamos qual o tipo de variavel que desejamos que
@@ -36,11 +37,11 @@ int main()
 
     std::cout << "***************" << std::endl;
     std::cout << "Vidas Jogador: " << NumVidas << std::endl;
-    std::cout << "Pontuacao: " << Pontuacao << std::endl;
+    std::cout << "Pontuação: " << Pontuacao << std::endl;
     std::cout << "Tamanho da Variável NumVidas " << sizeof(NumVidas) << "\n";
     std::cout << "Tamanho da Variável NumVidas " << sizeof(NumVidas) << "\n";
-    std::cout << "Endereco que Numvidas ocupa na Memoria Ram: " <<&NumVidas << "\n";
-    std::cout << "Endereco que Pontuacao ocupa na Memoria Ram: " <<&Pontuacao << "\n";
+    std::cout << "Endereco que Numvidas ocupa na Memória Ram: " <<&NumVidas << "\n";
+    std::cout << "Endereco que Pontuacao ocupa na Memória Ram: " <<&Pontuacao << "\n";
     std::cout << "***************" << std::endl;
 
     std::cout << "******DURANTE O JOGO*********" << std::endl;
