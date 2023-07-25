@@ -6,6 +6,8 @@ int main()
     int Numero;
     float Numero2;
     double Numero3;
+    char Caractere = '3';
+    char Caractere2 = 'k';
     Numero = 45;
     Numero2 = 55.56f;
     Numero3 = 45345.904555;
@@ -24,6 +26,16 @@ int main()
     std::cout << "Tamanho da Variavel Numero3: " << sizeof(Numero3) << "Bytes" 
     "\n";
     std::cout << "Endereco Carregado na Memoria: " << &Numero3 << "\n";
+
+    std::cout << "Valor Caractere: " << Caractere << std::endl;
+    std::cout << "Tamanho da Variavel Caractere: " << sizeof(Caractere) << "Bytes" 
+    "\n";
+    std::cout << "Endereco Carregado na Memoria: " << (void *)&Caractere << "\n";
+
+    std::cout << "Valor Caractere2: " << Caractere2 << std::endl;
+    std::cout << "Tamanho da Variavel Caractere2: " << sizeof(Caractere2) << 
+    "Bytes" "\n";
+    std::cout << "Endereco Carregado na Memoria: " << (void *)&Caractere2 << "\n";
 
 
     system("PAUSE");
